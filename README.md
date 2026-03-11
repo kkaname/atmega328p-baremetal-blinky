@@ -25,13 +25,14 @@ If you're looking for `digitalWrite()`, this is not that project.
 | Component | Value |
 |-----------|-------|
 | MCU | ATmega328P |
+| USB ISP AVR programmer | 1 |
 | Crystal Oscillator | 16 MHz external crystal |
 | Resistor | 1 * 220 Ω, 1 * 10KΩ |
 | Capacitor | 2 * 22pF, 3 * 0.1µF |
 | Push Button | 1 |
 |  LED | 1 * (Any color) |
 |  Breadboard | 1 |
-| And offcourse the wires to connect these components |
+| And offcourse some wires to connect these components |
 
 ---
 
@@ -46,6 +47,10 @@ Timer Frequency = F_CPU / (Prescaler × (1 + OCR1A))
 ```
 
 When Timer1 reaches the compare value (62499), it triggers an interrupt that toggles the LED and resets the counter automatically (CTC mode).
+
+# Demo
+
+![Demo](images/demo.mp4)
 
 ---
 
