@@ -1,21 +1,10 @@
-# Bare-Metal LED Blink on Arduino Uno
+# Bare-Metal LED Blink on ATmega 328P
 
-A **bare-metal LED blinking program** for the Arduino Uno (ATmega328P), written **without the Arduino framework or any libraries**.
+A **bare-metal LED blinking program** for the ATmega328P, written **without the Arduino framework or any libraries**.
 
 The code directly manipulates ATmega328P registers to configure Timer1 in CTC mode with interrupts to toggle the onboard LED at a 1-second interval.
 
 If you're looking for `digitalWrite()`, this is not that project.
-
----
-
-## Target Hardware
-
-| Component | Value |
-|-----------|-------|
-| Board | Arduino Uno R3 |
-| MCU | ATmega328P |
-| Clock | 16 MHz external crystal |
-| LED Pin | PORTB5 (Arduino digital pin 13, onboard LED) |
 
 ---
 
@@ -28,6 +17,21 @@ If you're looking for `digitalWrite()`, this is not that project.
 - Prescaler configuration for timing calculations
 - Low-power idle using `sleep` instruction
 - Minimal bare-metal setup for learning AVR internals
+ 
+---
+
+## Target Hardware:
+
+| Component | Value |
+|-----------|-------|
+| MCU | ATmega328P |
+| Crystal Oscillator | 16 MHz external crystal |
+| Resistor | 1 * 220 Ω, 1 * 10KΩ |
+| Capacitor | 2 * 22pF, 3 * 0.1µF |
+| Push Button | 1 |
+|  LED | 1 * (Any color) |
+|  Breadboard | 1 |
+| And offcourse the wires to connect these components |
 
 ---
 
