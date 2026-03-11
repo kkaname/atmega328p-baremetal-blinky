@@ -36,6 +36,11 @@ If you're looking for `digitalWrite()`, this is not that project.
 
 ---
 
+## Hardware Setup
+
+### Wiring Diagram
+![Wiring Diagram](images/wiring_diagram.jpgimg src="images/wiring_diagram.png" width="500">
+
 ## How It Works
 
 The LED blinks at exactly **1 Hz** (1 second on, 1 second off) using Timer1:
