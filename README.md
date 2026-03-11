@@ -39,7 +39,10 @@ If you're looking for `digitalWrite()`, this is not that project.
 ## Hardware Setup
 
 ### Wiring Diagram
-![Wiring Diagram](images/wiring_diagram.jpgimg src="images/wiring_diagram.png" width="500">
+<img src="images/wiring_diagram.png" width="500">
+    
+### Breadboard Layout
+<img src="images/breadboard_setup.png" width="500">
 
 ## How It Works
 
@@ -55,7 +58,7 @@ When Timer1 reaches the compare value (62499), it triggers an interrupt that tog
 
 # Demo
 
-![Demo](images/demo.mp4)
+![Demo](images/demo.gif)
 
 ---
 
